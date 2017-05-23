@@ -28,39 +28,15 @@
         </style>
     </head>
     <body  style="background-color:moccasin">
-        
-        <div class="container" >
+              <div class="container" >
             <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
-            <legend><i class="glyphicon glyphicon-globe"></i>LogIn!</legend>
-            <form action="login.do"  method="post" class="form" role="form">
-                <a href="left.jsp"></a>
-            <div class="row">
-                <div class="col-lg-4 col-sm-4">
-                    <label class="text-info">User Id:</label>      
-                </div>
-                <div class="col-lg-8 col-sm-8"><input class="form-control" type="text" placeholder="userid" name="txtuid" id="txt" onkeyup = "Validate(this)" required ></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-sm-4">
-                    <label class="text-info">Password:</label>      
-                </div>
-                <div class="col-lg-8 col-sm-8"><input type="password" class="form-control" name="txtpass" minlength="4" maxlength="16" placeholder="Enter Password" onkeyup="checkPass(); return false;" required ></div>
-            </div>
-                <br>
-               
-            <div class="row">
-                <div class="col-lg-12 col-sm-12">
-                    <center><button type="submit" class="btn btn-primary">LogIn</button></center>      
-                </div>
-                <br/>
-                <center> <a class="text-primary" href="signup.jsp"  target="ContentFrame" >Register</a>. <a href="#">Forget Password</a></center>
-            </div>
-            </form>
-        </div>
-            </div>
-        </div>
+            <legend><i class="glyphicon glyphicon-user"></i>User Log In</legend>
+
+<center> <a class="text-primary" href="signup.jsp"  target="ContentFrame" >Register</a>. <a href="#">Forget Password</a></center>
         
+<center><button type="button"  class="btn btn-primary"><a target="ContentFrame" href="login.jsp">LogIn</a></button></center>
+        </div></div></div>
         <div  id="heading" class="container-fluid">
             <h1><center>
                     List of Doctors:</center>

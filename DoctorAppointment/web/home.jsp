@@ -18,6 +18,6 @@
     </head>
     <a href="home.jsp"></a>
     <body>
-        <H1>Hello people I am HomePage</H1>
+
     </body>
 </html>
