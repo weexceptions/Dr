@@ -33,7 +33,7 @@
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
             <legend><i class="glyphicon glyphicon-user"></i>User Log In</legend>
 
-<center> <a class="text-primary" href="signup.jsp"  target="ContentFrame" >Register</a>. <a href="#">Forget Password</a></center>
+<center> <a class="text-primary" href="signup.jsp"  target="ContentFrame" >Register</a>. <a href="forget.jsp"  target="ContentFrame">Forget Password</a></center>
         
 <center><button type="button"  class="btn btn-primary"><a target="ContentFrame" href="login.jsp">LogIn</a></button></center>
         </div></div></div>

@@ -32,6 +32,10 @@ function checkPass()
         message.style.color = badColor;
         message.innerHTML = "Passwords Do Not Match!"
     }
+    var user = document.getElementById('txtuid');
+    var id=document.getElementById(id);
+    id.setAttribute("Hello");
+    
 } 
 function validatephone(phone) 
 {
