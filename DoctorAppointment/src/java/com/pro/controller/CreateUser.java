@@ -37,9 +37,9 @@ public class CreateUser extends HttpServlet {
         String email= request.getParameter("txtemail");
         String Address= request.getParameter("txtaddress");
         String Phone= request.getParameter("txtphone");
-            
+        String sex=request.getParameter("txtsex");
         
-        User user = new User("",fname,lname,pass,dob,Phone,email,Address);
+        User user = new User("",fname,lname,pass,dob,Phone,email,Address,sex);
         UserDAO userdao = new DaoImpl();
         
       //  userdao.createUser(user);

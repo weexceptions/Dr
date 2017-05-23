@@ -80,19 +80,24 @@ public class DaoImpl implements UserDAO{
         String s2;
         try {
             statement = con.createStatement();
+            System.out.println("Create Stttttttt");
            resultSet = statement.executeQuery(sql);
             System.out.println("Sque Exe");
             while (resultSet.next()){
             s1=resultSet.getString("fname");
             s2=resultSet.getString("password");
-                System.out.println(s1+"*****---"+s2);
+                System.out.println(s1+"---"+s2);
             s1.toLowerCase();
             s2.toLowerCase();
-            if(id.equals(s1)&&pass.equals(s2)){
+                if (id.equals(s1)) {
+                    System.out.println("Correct ID.............");
+           
+            if(pass.equals(s2)){
                 System.out.println("Login pass***** *****");
                 r=true;
                 break;
             }
+                }
             else{
                 System.out.println("Not matchs");
             }
