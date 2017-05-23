@@ -81,7 +81,7 @@ public class DaoImpl implements UserDAO{
         try {
             statement = con.createStatement();
            resultSet = statement.executeQuery(sql);
-          
+            System.out.println("Sque Exe");
             while (resultSet.next()){
             s1=resultSet.getString("fname");
             s2=resultSet.getString("password");
@@ -89,7 +89,7 @@ public class DaoImpl implements UserDAO{
             s1.toLowerCase();
             s2.toLowerCase();
             if(id.equals(s1)&&pass.equals(s2)){
-                System.out.println("Login pass**********");
+                System.out.println("Login pass***** *****");
                 r=true;
                 break;
             }
