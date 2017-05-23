@@ -36,7 +36,7 @@
   min-width: 100%;
   height: 400px;
 }
-
+.text-justify{ padding-left: 10px;}
             
         </style>
     </head>
@@ -46,6 +46,7 @@
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner" role="listbox">
@@ -60,7 +61,7 @@
           </div>
         </div>
         <div class="item">
-            <img class="second-slide" src="Images/infra1.jpg" alt="Second slide">
+            <img class="second-slide" src="Images/infra2.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>abc.</h1>
@@ -73,12 +74,18 @@
             <img class="third-slide" src="Images/infra3.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>123.</h1>
-              <p>1234567890123456789123456.s</p>
-              <p><a class="btn btn-lg btn-primary" href="Gallery.html" role="button">Browse gallery</a></p>
             </div>
           </div>
         </div>
+          
+        <div class="item">
+            <img class="third-slide" src="Images/infra4.jpg" alt="Fourth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" href="gallery.html" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>  
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -90,20 +97,12 @@
       </a>
     </div><!-- /.carousel -->
 
-        <h3>  Stay Healthy Hospital</h3>
-       <p style="font-family: sans-serif;font-style: normal;font-size-adjust: none;font-size: medium">
-       <p style="font-size: large">   Stay Healthy hospital is a well-known hospital that provides treatment for different diseases since 2010.<br>
-                                   It has four different branches in India.<br>
-                                   It is a multispecialist hospital that provides treatment for not only kids and seniors but for all age groups.<br> 
-                                   The hospital organizes free health check up camps every month and is well known for regular meeting of patients with health experts.<br>
-                                   Expert doctor also provide information and possible solution for patient's illness along with a regular healthy diet plan.<br>
-                              
-    
-
-       <p class="text-justify" style="font-size: large">
+    <center><h3> Stay Healthy Hospital</h3></center>
+       
+            <p class="text-justify" style="font-size: large">
             Stay Healthy hospital is a well-known hospital that provides treatment for different diseases since 2010.<br>
             It has four different branches in India.<br>
-            is a multispecialist hospital that provides treatment for not only kids and seniors but for all age groups.<br> 
+            is a multi specialist hospital that provides treatment for not only kids and seniors but for all age groups.<br> 
             The hospital organizes free health check up camps every month and is well known for regular meeting of patients with health experts.<br>
             Expert doctor also provide information and possible solution for patient's illness along with a regular healthy diet plan.<br>
            </p>
