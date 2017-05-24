@@ -28,7 +28,6 @@ public class Login extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             System.out.println("Before");
-            out.println("Failed to Create User ");
             String id = request.getParameter("txtuid");
             String pass = request.getParameter("txtpass");
             //Test
@@ -49,8 +48,11 @@ public class Login extends HttpServlet {
              }
              else
             {
-                System.out.println("Failed to create User Record");                
-                out.println("Failed to Create User ");
+                System.out.println("Failed to Login");  
+                out.println("<script type=\"text/javascript\">");
+                out.println("alert('User or password incorrect');");
+                out.println("location='login.jsp';");
+                out.println("</script>");
             }  
         }
     }

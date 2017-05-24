@@ -5,14 +5,14 @@
  */
 package com.pro.dao;
 
-import com.pro.Model.User;
+import com.pro.Model.*;
 /**
  *
  * @author Akshay
  */
 public interface UserDAO {
     
-    boolean createUser(User u);
+    boolean createUser(User u,Patient p);
     User getUserById(int userId);
     boolean updateUser(int userId, User user);
     boolean deleteUser(int userId);
