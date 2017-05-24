@@ -109,7 +109,7 @@ public class DaoImpl implements UserDAO{
                     System.out.println("Correct ID.............");
            
             if(pass.equals(s2)){
-                System.out.println("Login pass***** **");
+                System.out.println("Login pass*****");
                 r=true;
                 break;
             }
