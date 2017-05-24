@@ -10,33 +10,44 @@ package com.pro.Model;
  * @author Akshay
  */
 public class Patient  {
-    private int userId;
-    private String password;
-    private String diseaseName;
-
     
-    public String getPassword() {
-        return password;
+    private String pid;
+    private String ageGroup;
+    private String gender;
+
+    @Override
+    public String toString() {
+        return "Patient{" + "pid=" + pid + ", ageGroup=" + ageGroup + ", gender=" + gender + '}';
     }
 
-    /**
-     * @param password the password to set
-     */
-    public void setPassword(String password) {
-        this.password = password;
+    public Patient(String pid, String ageGroup, String gender) {
+        this.pid = pid;
+        this.ageGroup = ageGroup;
+        this.gender = gender;
     }
 
-    /**
-     * @return the disease
-     */
-    public String getDiseaseName() {
-        return diseaseName;
+    public String getPid() {
+        return pid;
     }
 
-    /**
-     * @param disease the disease to set
-     */
-    public void setDisease(String disease) {
-        this.diseaseName = diseaseName;
+    public void setPid(String pid) {
+        this.pid = pid;
     }
+
+    public String getAgeGroup() {
+        return ageGroup;
+    }
+
+    public void setAgeGroup(String ageGroup) {
+        this.ageGroup = ageGroup;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+    
 }

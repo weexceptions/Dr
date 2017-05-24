@@ -19,20 +19,18 @@ public class User {
     private String phone;
     private String emailId;
     private String address;
-    private String sex;
 
-    
-    public User(String userId, String firstName, String lastName,String password, String dob, String phone, String emailId, String address,String sex) {
+    public User(String userId, String firstName, String lastName, String password, String dob, String phone, String emailId, String address) {
         this.userId = userId;
         this.firstName = firstName;
         this.lastName = lastName;
+        this.password = password;
         this.dob = dob;
         this.phone = phone;
         this.emailId = emailId;
         this.address = address;
-        this.password= password;
-        this.sex=sex;
     }
+
 
     public String getDob() {
         return dob;
@@ -44,8 +42,9 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" + "userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName +", password="+ password + ", dob=" + dob + ", phone=" + phone + ", emailId=" + emailId + ", address=" + address + '}';
+        return "User{" + "userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", password=" + password + ", dob=" + dob + ", phone=" + phone + ", emailId=" + emailId + ", address=" + address + '}';
     }
+
 
     public String getPassword() {
         return password;
@@ -104,13 +103,5 @@ public class User {
         this.address = address;
     }
 
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-    
     
 }

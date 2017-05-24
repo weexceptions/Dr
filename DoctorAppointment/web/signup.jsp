@@ -68,88 +68,46 @@
       </a>
     </div><!-- /.carousel -->
 
-        
-        
-        <!-- Signup form -->
-    <!--
-        <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
-            <legend><i class="glyphicon glyphicon-globe"></i>Sign up!</legend>
-            <form action="createuser.do"  method="post" class="form" role="form">
-            <div class="row">
-                <div class="col-xs-6 col-md-6">
-                    <input class="form-control" name="txtfname" placeholder="First Name" type="text"
-                        required autofocus />
-                </div>
-                <div class="col-xs-6 col-md-6">
-                    <input class="form-control" name="txtlname" placeholder="Last Name" type="text" required />
-                </div>
-            </div>
-            <input class="form-control" name="txtemail" placeholder="Your Email" type="email" />
-            <input class="form-control" name="txtpass" placeholder="Password" type="password" />
-            <input class="form-control" name="txtpass" placeholder="Re-enter Password" type="password" />
-            <input class="form-control" name="txtaddress" placeholder="Address" type="text" required autofocus />
-            <input class="form-control" name="txtphone" placeholder="Phone" type="text" required autofocus />
-                
-            <div class="row">
-                <div class="form-group">
-                    <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
-                    <div class="col-sm-9">
-                        <input type="date" name="txtdob" id="birthDate" class="form-control">
-                    </div>
-                </div>
-            </div>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox1" value="male" />
-                Male
-            </label>
-            <label class="radio-inline">
-                <input type="radio" name="sex" id="inlineCheckbox2" value="female" />
-                Female
-            </label>
-            <br />
-            <br />
-            <button class="btn btn-lg btn-primary btn-block" type="submit" value="Sign Up">
-                Sign up</button>
-            </form>
-        </div>
-    </div>
-</div>
--->
-
-        <div class="container">
+<!-- Sign Up form Start -->
+    <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
             <legend><i class="glyphicon glyphicon-globe"></i>Sign up!</legend>
         <div class="col-md-6">
             <form action="createuser.do" method="post" class="form" id="fileForm" role="form">
             <fieldset><legend class="text-center">Valid information is required to register. <span class="req"><small> required *</small></span></legend>
-            <div class="form-group"> 	 
+            
+            
+            <div class="form-group">
+                <label for="username"><span class="req">* </span> User name:  <small>This will be your login user name</small> </label> 
+                <input class="form-control" type="text" name="txtpid" id = "txt" onkeyup = "Validate(this)" placeholder="minimum 6 letters" required />  
+                <div id="errLast"></div>
+            </div>    
+             <div class="form-group"> 	 
                 <label for="firstname"><span class="req">* </span> First name: </label>
                 <input class="form-control" type="text" name="txtfname" id = "txt" onkeyup = "Validate(this)" required /> 
-                        <div id="errFirst"></div>    
+                <div id="errFirst"></div>    
             </div>
 
             <div class="form-group">
                 <label for="lastname"><span class="req">* </span> Last name: </label> 
-                    <input class="form-control" type="text" name="txtlname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />  
-                        <div id="errLast"></div>
+                <input class="form-control" type="text" name="txtlname" id = "txt" onkeyup = "Validate(this)" placeholder="hyphen or single quote OK" required />  
+                <div id="errLast"></div>
             </div>
 
             <div class="form-group">
                 <label for="email"><span class="req">* </span> Email Address: </label> 
-                    <input class="form-control" required type="text" name="txtemail" id = "email"  onchange="email_validate(this.value);" />   
-                        <div class="status" id="status"></div>
+                <input class="form-control" required type="text" name="txtemail" id = "email"  onchange="email_validate(this.value);" />   
+                <div class="status" id="status"></div>
             </div>
             
             <div class="form-group">
                 <label for="password"><span class="req">* </span> Password: </label>
-                    <input required name="txtpass" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
+                <input required name="txtpass" type="password" class="form-control inputpass" minlength="4" maxlength="16"  id="pass1" /> </p>
 
                 <label for="password"><span class="req">* </span> Password Confirm: </label>
-                    <input required name="txtpass2" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
-                        <span id="confirmMessage" class="confirmMessage"></span>
+                <input required name="txtpass2" type="password" class="form-control inputpass" minlength="4" maxlength="16" placeholder="Enter again to validate"  id="pass2" onkeyup="checkPass(); return false;" />
+                <span id="confirmMessage" class="confirmMessage"></span>
             </div>
             
             <div class="form-group">
@@ -171,15 +129,21 @@
                 <input type="radio" name="txtsex" id="inlineCheckbox2" value="female" />
                 Female
             </label>
-                </div>
-
-            
+            </div>
+            <div class="form-group">
+                <label for="email"><span class="req">* </span>Age Group: </label> 
+                <select name="txtage" class="form-control" >
+                    <option value="1" id="age">below 19</option>
+                    <option value="2" id="age">20 - 39</option>
+                    <option value="3" id="age">40 - 59</option>
+                    <option value="4" id="age">60 - 79</option>
+                    <option value="5" id="age">80 above.</option>
+                </select>
+            </div>            
             <div class="form-group">
             <label for="password"><span class="req">* </span>Date of Birth: </label>
                 <input type="date" name="txtdob">
                 <hr>
-                
-
                 <input type="checkbox" required name="terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" id="field_terms">   <label for="terms">I agree with the <a href="#" title="You may read our terms and conditions by clicking on this link">terms and conditions</a> for Registration.</label><span class="req">* </span>
             </div>
 

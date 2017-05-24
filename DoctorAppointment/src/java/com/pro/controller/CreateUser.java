@@ -5,6 +5,7 @@
  */
 package com.pro.Controller;
 
+import com.pro.Model.Patient;
 import com.pro.Model.User;
 import com.pro.dao.UserDAO;
 import com.pro.dao.DaoImpl;
@@ -37,9 +38,12 @@ public class CreateUser extends HttpServlet {
         String email= request.getParameter("txtemail");
         String Address= request.getParameter("txtaddress");
         String Phone= request.getParameter("txtphone");
-        String sex=request.getParameter("txtsex");
+        String gender=request.getParameter("txtsex");
+        String pid=request.getParameter("txtpid");
+        String agegroup= request.getParameter("txtage");
         
-        User user = new User("",fname,lname,pass,dob,Phone,email,Address,sex);
+        User user = new User("",fname,lname,pass,dob,Phone,email,Address);
+        Patient patient =new Patient(pid, agegroup, gender);
         UserDAO userdao = new DaoImpl();
         
       //  userdao.createUser(user);
