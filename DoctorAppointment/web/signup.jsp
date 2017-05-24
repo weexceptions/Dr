@@ -132,7 +132,7 @@
             </div>
             <div class="form-group">
                 <label for="email"><span class="req">* </span>Age Group: </label> 
-                <select name="txtage" class="form-control" >
+                <select name="txtage" class="form-control" placeholder="select agegroup" >
                     <option value="1" id="age">below 19</option>
                     <option value="2" id="age">20 - 39</option>
                     <option value="3" id="age">40 - 59</option>
