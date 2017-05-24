@@ -22,7 +22,25 @@ public class Patient  {
 
     public Patient(String pid, String ageGroup, String gender) {
         this.pid = pid;
-        this.ageGroup = ageGroup;
+        switch (ageGroup) {
+            case "1":
+                this.ageGroup = "Below 19";
+                break;
+            case "2":
+                this.ageGroup = "20-39";
+                break;
+            case "3":
+                this.ageGroup = "40-59";
+                break;
+            case "4":
+                this.ageGroup = "60-79";
+                break;
+            case "5":
+                this.ageGroup = "80 Above";
+                break;
+            default:
+                System.out.println("Invalid Age Group");
+        }
         this.gender = gender;
     }
 

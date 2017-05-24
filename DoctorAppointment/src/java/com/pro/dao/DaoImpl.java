@@ -5,6 +5,7 @@
  */
 package com.pro.dao;
 
+import com.pro.Model.Patient;
 import com.pro.Model.User;
 import com.sun.istack.internal.logging.Logger;
 import java.sql.Connection;
@@ -22,10 +23,24 @@ import java.util.logging.Level;
 public class DaoImpl implements UserDAO{
     Connection con = DBconnection.getConnection();
     @Override
-    public boolean createUser(User u) {
+    public boolean createUser(User u,Patient p) {
         boolean flag = false;
+        
         try {
-            PreparedStatement ps = con.prepareStatement("insert into USERDETAIL (PASSWORD,FNAME,LNAME,DOB,EMAIL,ADDRESS,PHONE) values (?,?,?,?,?,?,?)");
+            PreparedStatement ps = con.prepareStatement("insert into PATIENT (P_ID,AGEGROUP,GENDER) values (?,?,?)");
+            ps.setString(1, p.getPid());
+            ps.setString(2, p.getAgeGroup());
+            ps.setString(3, p.getGender());
+            ps.execute();
+            flag=true;
+            System.out.println("Insert Successfull in PATIENT");
+        } catch (Exception e) {
+            flag=false;
+            System.out.println("Insert Failed in PATIENT");
+            System.out.println(e.getMessage());
+        }
+        try {
+            PreparedStatement ps = con.prepareStatement("insert into USERDETAIL (PASSWORD,FNAME,LNAME,DOB,EMAIL,ADDRESS,PHONE,P_ID) values (?,?,?,?,?,?,?,?)");
             ps.setString(1, u.getPassword());
             ps.setString(2, u.getFirstName());
             ps.setString(3, u.getLastName());
@@ -33,12 +48,13 @@ public class DaoImpl implements UserDAO{
             ps.setString(5, u.getEmailId());
             ps.setString(6, u.getAddress());
             ps.setString(7, u.getPhone());
+            ps.setString(8, p.getPid());
             ps.execute();
             flag=true;
-            System.out.println("Insert Successfull");
+            System.out.println("Insert Successfull in USERSDETAILS");
         } catch (Exception e) {
             flag=false;
-            System.out.println("Insert Failed");
+            System.out.println("Insert Failed in USERSDETAILS");
             System.out.println(e.getMessage());
             //Logger.getLogger(daoImpl.class.getName()).log(Level.SEVERE,null,e);
         }
@@ -73,7 +89,7 @@ public class DaoImpl implements UserDAO{
         boolean r=false;
         id.toLowerCase();
         pass.toLowerCase();
-        String sql =("Select fname,password from USERDETAIL ");
+        String sql =("Select P_ID,password from USERDETAIL ");
         Statement statement=null;
         ResultSet resultSet=null;
         String s1;
@@ -84,7 +100,7 @@ public class DaoImpl implements UserDAO{
            resultSet = statement.executeQuery(sql);
             System.out.println("Sque Exe");
             while (resultSet.next()){
-            s1=resultSet.getString("fname");
+            s1=resultSet.getString("P_ID");
             s2=resultSet.getString("password");
                 System.out.println(s1+"---"+s2);
             s1.toLowerCase();

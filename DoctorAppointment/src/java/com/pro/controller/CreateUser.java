@@ -47,7 +47,7 @@ public class CreateUser extends HttpServlet {
         UserDAO userdao = new DaoImpl();
         
       //  userdao.createUser(user);
-        if(userdao.createUser(user)){
+        if(userdao.createUser(user,patient)){
                 System.out.println("User Record Successfully Inserted");
                 RequestDispatcher rd = request.getRequestDispatcher("userhome.jsp");
                 request.setAttribute("auser", user);
