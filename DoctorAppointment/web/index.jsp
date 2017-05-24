@@ -69,8 +69,8 @@ body{
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help Desk<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
                 <li><a target="ContentFrame" href="faqs.jsp">FAQs</a></li>
-              <li><a target="ContentFrame" href="#">Enquiry Desk</a></li>
-              <li><a target="ContentFrame" href="#">Doctor's  Help</a></li>
+              <li><a target="ContentFrame" href="contectus.jsp">Enquiry Desk</a></li>
+              <li><a target="ContentFrame" href="d_login.jsp">Doctor's LogIn</a></li>
                </ul>
           </li>
                     <li><a target="ContentFrame" href="signup.jsp">SignUp</a></li>

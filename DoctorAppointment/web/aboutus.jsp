@@ -51,7 +51,7 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-            <img class="first-slide" src="Images/infra2.jpg" alt="First slide">
+            <img class="first-slide" src="Images/infra1.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
               <h1>ABC.</h1>
