@@ -35,7 +35,7 @@
 
 <center> <a class="text-primary" href="signup.jsp"  target="ContentFrame" >Register</a>. <a href="forget.jsp"  target="ContentFrame">Forget Password</a></center>
         
-<center><button type="button"  class="btn btn-primary"><a target="ContentFrame" href="login.jsp">LogIn</a></button></center>
+<center><a target="ContentFrame" href="login.jsp"><button type="button"  class="btn btn-primary">LogIn</button></a></center>
         </div></div></div>
         <div  id="heading" class="container-fluid">
             <h1><center>

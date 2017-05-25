@@ -54,9 +54,7 @@
             <img class="first-slide" src="Images/infra1.jpg" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>ABC.</h1>
-              <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ.</p>
-              <p><a class="btn btn-lg btn-primary" href="#"  role="button">Sign up today</a></p>
+              <p><a class="btn btn-lg btn-primary" href="signup.jsp"  role="button">Sign up today</a></p>
             </div>
           </div>
         </div>
@@ -64,10 +62,7 @@
             <img class="second-slide" src="Images/infra2.jpg" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>abc.</h1>
-              <p>abcdefghijklmnopqrstuvwxyz.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-            </div>
+              </div>
           </div>
         </div>
         <div class="item">

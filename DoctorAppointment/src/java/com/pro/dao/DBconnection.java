@@ -13,8 +13,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Akshay
- */
+  */
 public class DBconnection {
     
     public static Connection getConnection(){

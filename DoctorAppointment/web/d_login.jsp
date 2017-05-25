@@ -9,7 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Doctor's LogIn</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
     </head>
     <body>
         <div class="text-justify">
@@ -18,7 +22,7 @@
             <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
             <legend><i class="glyphicon glyphicon-globe"></i>LogIn!</legend>
-            <form action="login.do"  method="post" class="form" role="form">
+            <form action="login.do"  method="post" class="form" role="form" target="_blank">
                 <a href="left.jsp"></a>
             <div class="row">
                 <div class="col-lg-4 col-sm-4">
