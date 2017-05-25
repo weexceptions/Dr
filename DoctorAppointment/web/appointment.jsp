@@ -37,9 +37,9 @@
                 <div class="form-group">
                     <label for="sel1">Select Doctor:</label>
                     <select class="form-control">
-                        <option id="" value=""></option>
-                        <option id="" value=""></option>
-                        <option id="" value=""></option>
+                        <option id="" value="">1</option>
+                        <option id="" value="">3</option>
+                        <option id="" value="">4</option>
                         <option id="" value=""></option>
                         <option id="" value=""></option>
                         <option id="" value=""></option>
