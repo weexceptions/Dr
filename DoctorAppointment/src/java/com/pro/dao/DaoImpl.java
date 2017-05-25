@@ -102,10 +102,12 @@ public class DaoImpl implements UserDAO{
             while (resultSet.next()){
             s1=resultSet.getString("P_ID");
             s2=resultSet.getString("password");
-                System.out.println(s1+"---"+s2);
             s1.toLowerCase();
             s2.toLowerCase();
-                if (id.equals(s1)) {
+                System.out.println(s1+"---"+s2);
+                System.out.println(id+"===="+pass);
+            
+                if (id.equals(s1.toLowerCase())) {
                     System.out.println("Correct ID.............");
            
             if(pass.equals(s2)){
