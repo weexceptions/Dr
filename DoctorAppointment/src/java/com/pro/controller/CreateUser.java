@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.pro.Controller;
+package com.pro.controller;
 
-import com.pro.Model.Patient;
-import com.pro.Model.User;
+import com.pro.model.Patient;
+import com.pro.model.User;
 import com.pro.dao.UserDAO;
 import com.pro.dao.DaoImpl;
 import java.io.IOException;
